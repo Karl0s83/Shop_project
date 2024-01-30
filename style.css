@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-letter: #fe7a36;
+  --background: #280274;
+  --second-color: #3652ad;
+}
+
+body {
+  background: var(--background);
+  color: var(--color-letter);
+}
+
+.lizard {
+  width: 35px;
+}
+
+.navbar {
+  font-size: 1.2em;
+  background: var(--second-color);
+  border: 2px solid black;
+  color: var(--color-letter);
+  padding: 10px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.navbar2 {
+  align-items: center;
+  display: flex;
+}
+
+.navbar-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 1.8em;
+}
+
+.main-nav {
+  list-style: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+#chkToggle {
+  display: none;
+}
+
+#chkToggle:checked + ul.main-nav {
+  display: block;
+}
+
+.banner {
+  background: var(--color-letter);
+  text-align: center;
+  color: rgb(63, 59, 59);
+  padding-top: 4em;
+  width: 100%;
+}
+
+.banner,
+.img_banner {
+  width: 100%;
+}
+
+.pcgamer {
+  text-align: justify;
+  padding: 20px 10px;
+}
+
+.productos {
+  margin: 15px 15px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.item {
+  border: 2px solid;
+  padding: 25px;
+  width: 354px;
+  height: 518px;
+}
+
+.item a {
+  text-decoration: none;
+  color: var(--color-letter);
+}
+.opciones {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.gratis {
+  color: #52f903;
+  border: 1px solid #52f903;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+.regalo {
+  color: orange;
+  border: 1px solid orange;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+.descuento {
+  color: grey;
+  margin-left: 10px;
+}
+
+.dias {
+  color: red;
+}
+
+.recibelo {
+  color: #52f903;
+}
+
+.vende {
+  color: grey;
+}
+
+.price {
+  color: white;
+}
+
+.dias,
+.recibelo,
+.vende {
+  margin-top: 3px;
+  font-size: 13px;
+}
+
+.circle {
+  margin-left: 10px;
+}
+
+.circle1 {
+  color: white;
+}
+
+.circle2 {
+  color: black;
+}
+
+/* Aquí no conseguí que las imagenes al hacer scroll no se solapasen con el navbar */
+/* Al cabo de unas horas pude entender lo del z-index en el .navbar, y ahora no se solapan */
+
+.seccion {
+  padding: 25px;
+}
+
+.blogs h2 {
+  padding: 20px;
+}
+
+.blogs {
+  flex-wrap: wrap;
+}
+
+.seccion {
+  flex-wrap: wrap;
+}
+
+.image-zoom {
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+}
+
+.image-zoom img {
+  transition: 0.3s ease-out;
+  width: 100%;
+  height: 240px;
+}
+
+.image-zoom:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.blog2 {
+  flex: 1;
+  border: 1px solid black;
+  background: var(--background);
+  border-radius: 15px;
+  padding: 10px;
+  margin: -50px 30px 0px;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.resum {
+  margin-top: 15px;
+  padding: 15px;
+  align-items: center;
+  display: grid;
+}
+
+.resum a {
+  text-decoration: none;
+  color: var(--second-color);
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 375px) {
+  #compra {
+    display: none;
+  }
+
+  .icon {
+    margin-right: 10px;
+  }
+}
