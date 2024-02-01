@@ -13,7 +13,7 @@
     <meta name="author" content="Karlos" />
     <meta
       name="description"
-      content="Una tienda de accesorios para jugadores profesionales en el mundo gaming"
+      content="Una tienda de accesorios para jugadores, y jugadores profesionales en el mundo gaming."
     />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link
@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="style.css" />
     <title>Lizzard Gaming</title>
   </head>
-
   <body>
+    <div id="inicio_pagina"></div>
     <header>
       <section>
         <nav class="navbar">
@@ -64,30 +64,13 @@
                 >Cesta (2)</a
               >
             </li>
-            <li>
-              <a href="#" class="nav-links" id="compra">
-                <iconify-icon
-                  icon="icon-park-outline:weixin-market"
-                ></iconify-icon>
-                <p>(2)</p>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-links" id="compra">
-                Perfil<img
-                  src="./assets/wolfgang.png"
-                  alt="avatar"
-                  class="wolf"
-                />
-              </a>
-            </li>
           </ul>
         </nav>
       </section>
     </header>
     <main>
-      <section>
-        <div class="banner">
+      <div class="banner">
+        <div class="especial">
           <h2>Especial Gaming</h2>
           <p>
             No importa si eres gamer de estar por casa o un auténtico pro. En
@@ -98,9 +81,9 @@
             consolas, descuida. Todas las consolas portátiles y de última
             generación están aquí. ¡Y con descuentos exclusivos!
           </p>
-          <img src="./assets/gamers.png" alt="banner" class="img_banner" />
         </div>
-      </section>
+        <img src="./assets/gamers.png" alt="banner" class="background"/>
+      </div>
 
       <div class="pcgamer">
         <h2>Todo lo que necesita un PcGamer</h2>
@@ -110,6 +93,10 @@
           la inmersión total en cada partida
         </p>
       </div>
+
+      <a href="#" class="back-to-top"
+        ><i class="bi bi-arrow-up-circle-fill bottom" id="bottom"></i
+      ></a>
 
       <section>
         <section class="productos">
@@ -121,16 +108,18 @@
                 src="https://thumb.pccomponentes.com/w-300-300/articles/1067/10674289/1868-alurin-flex-advance-intel-core-i5-1155g7-8gb-500gb-ssd-156-comprar.jpg"
                 alt="portatil"
               />
-            
-            <div class="opciones">
-              <p class="gratis">Envío Gratis</p>
-            </div>
-            <p>Alurin Flex Advance Intel Core i5-1155G7/8GB/500GB SSD/15.6"</p>
-            <p class="price">429,90€ <del class="descuento">498,86 €</del></p>
-            <p class="dias">Más bajo en los últimos 30 días</p>
-            <p class="recibelo">Recíbelo el lunes 30 de enero</p>
-            <p class="vende">Vendido por <strong>PcComponentes</strong></p>
-          </a>
+
+              <div class="opciones">
+                <p class="gratis">Envío Gratis</p>
+              </div>
+              <p>
+                Alurin Flex Advance Intel Core i5-1155G7/8GB/500GB SSD/15.6"
+              </p>
+              <p class="price">429,90€ <del class="descuento">498,86 €</del></p>
+              <p class="dias">Más bajo en los últimos 30 días</p>
+              <p class="recibelo">Recíbelo el lunes 30 de enero</p>
+              <p class="vende">Vendido por <strong>PcComponentes</strong></p>
+            </a>
           </article>
 
           <article class="item">
@@ -143,19 +132,19 @@
                 src="https://thumb.pccomponentes.com/w-300-300/articles/1067/10674384/161-pccom-revolt-3050-intel-core-i7-13700h-16gb-1tb-ssd-rtx-3050-156-windows-11-home-comprar.jpg"
                 alt="portatil"
               />
-            
-            <div class="opciones">
-              <p class="gratis">Envío Gratis</p>
-              <p class="regalo">Incluye Regalo</p>
-            </div>
-            <p>
-              PcCom Revolt 3050 Intel Core i7-13700H/16GB/1TB SSD/RTX 3050/15.6"
-              + Windows 11 Home
-            </p>
-            <p class="price">1599,77€</p>
-            <p class="recibelo">Recíbelo el lunes 30 de enero</p>
-            <p class="vende">Vendido por <strong>PcComponentes</strong></p>
-          </a>
+
+              <div class="opciones">
+                <p class="gratis">Envío Gratis</p>
+                <p class="regalo">Incluye Regalo</p>
+              </div>
+              <p>
+                PcCom Revolt 3050 Intel Core i7-13700H/16GB/1TB SSD/RTX
+                3050/15.6" + Windows 11 Home
+              </p>
+              <p class="price">1599,77€</p>
+              <p class="recibelo">Recíbelo el lunes 30 de enero</p>
+              <p class="vende">Vendido por <strong>PcComponentes</strong></p>
+            </a>
           </article>
 
           <article class="item">
@@ -168,19 +157,19 @@
                 src="https://thumb.pccomponentes.com/w-300-300/articles/1072/10720423/123-asus-rog-strix-g16-g614ji-n3163-intel-core-i7-13650hx-32gb-1tb-ssd-rtx-4070-16.jpg"
                 alt="portatil"
               />
-            
-            <div class="opciones">
-              <p class="gratis">Envío Gratis</p>
-            </div>
-            <p>
-              ASUS ROG Strix G16 G614JI-N3163 Intel Core i7-13650HX/32GB/1TB
-              SSD/RTX 4070/16"
-            </p>
-            <p class="price">1599€<del class="descuento">2079€</del></p>
-            <p class="dias">Más bajo en los últimos 60 días</p>
-            <p class="recibelo">Recíbelo el lunes 30 de enero</p>
-            <p class="vende">Vendido por <strong>PcComponentes</strong></p>
-          </a>
+
+              <div class="opciones">
+                <p class="gratis">Envío Gratis</p>
+              </div>
+              <p>
+                ASUS ROG Strix G16 G614JI-N3163 Intel Core i7-13650HX/32GB/1TB
+                SSD/RTX 4070/16"
+              </p>
+              <p class="price">1599€<del class="descuento">2079€</del></p>
+              <p class="dias">Más bajo en los últimos 60 días</p>
+              <p class="recibelo">Recíbelo el lunes 30 de enero</p>
+              <p class="vende">Vendido por <strong>PcComponentes</strong></p>
+            </a>
           </article>
 
           <article class="item">
@@ -191,16 +180,18 @@
                 src="https://thumb.pccomponentes.com/w-300-300/articles/1066/10664846/1116-lenovo-v15-g3-aba-amd-ryzen-7-5825u-16gb-512gb-ssd-156.jpg"
                 alt="portatil"
               />
-            
-            <div class="opciones">
-              <p class="gratis">Envío Gratis</p>
-              <p class="regalo">Incluye Regalo</p>
-            </div>
-            <p>Alurin Flex Advance Intel Core i5-1155G7/8GB/500GB SSD/15.6"</p>
-            <p class="price">559€</p>
-            <p class="recibelo">Recíbelo el lunes 30 de enero</p>
-            <p class="vende">Vendido por <strong>PcComponentes</strong></p>
-          </a>
+
+              <div class="opciones">
+                <p class="gratis">Envío Gratis</p>
+                <p class="regalo">Incluye Regalo</p>
+              </div>
+              <p>
+                Alurin Flex Advance Intel Core i5-1155G7/8GB/500GB SSD/15.6"
+              </p>
+              <p class="price">559€</p>
+              <p class="recibelo">Recíbelo el lunes 30 de enero</p>
+              <p class="vende">Vendido por <strong>PcComponentes</strong></p>
+            </a>
           </article>
 
           <article class="item">
@@ -211,17 +202,17 @@
                 src="https://thumb.pccomponentes.com/w-300-300/articles/1080/10804579/1659-lg-32up55np-w-315-led-ultrahd-4k-freesync-usb-c.jpg"
                 alt="portatil"
               />
-            
-            <div class="opciones">
-              <p class="gratis">Envío Gratis</p>
-            </div>
-            <p>LG 32UP55NP-W 31.5" LED UltraHD 4K FreeSync USB-C</p>
-            <p class="price">391,95€</p>
-            <p class="recibelo">
-              Recíbelo entre el jueves 1 y el lunes 5 de febrero
-            </p>
-            <p class="vende">Vendido por <strong>eWekI</strong></p>
-          </a>
+
+              <div class="opciones">
+                <p class="gratis">Envío Gratis</p>
+              </div>
+              <p>LG 32UP55NP-W 31.5" LED UltraHD 4K FreeSync USB-C</p>
+              <p class="price">391,95€</p>
+              <p class="recibelo">
+                Recíbelo entre el jueves 1 y el lunes 5 de febrero
+              </p>
+              <p class="vende">Vendido por <strong>eWekI</strong></p>
+            </a>
           </article>
 
           <article class="item">
@@ -232,21 +223,22 @@
                 src="https://thumb.pccomponentes.com/w-300-300/articles/1076/10766715/10678-corsair-set-de-juego-4-en-1-edicion-2023-k55-rgb-pro-harpoon-rgb-pro-hs55-stereo-mm100-f21d0fe1-a821-40aa-9706-1f066662fb3c.jpg"
                 alt="portatil"
               />
-            
-            <div class="opciones">
-              <p class="regalo">Incluye Regalo</p>
-              <p class="gratis">
-                Te recomendamos <i class="bi bi-info-circle circle"></i>
+
+              <div class="opciones">
+                <p class="regalo">Incluye Regalo</p>
+                <p class="gratis">
+                  Te recomendamos
+                  <i class="bi bi-info-circle circle" id="info"></i>
+                </p>
+              </div>
+              <p>
+                Corsair Pack Gaming Teclado K55 RGB PRO + Ratón HARPOON RGB PRO
+                + Auriculares HS55 STEREO + MM100
               </p>
-            </div>
-            <p>
-              Corsair Pack Gaming Teclado K55 RGB PRO + Ratón HARPOON RGB PRO +
-              Auriculares HS55 STEREO + MM100
-            </p>
-            <p class="price">89€</p>
-            <p class="recibelo">Recíbelo el lunes 30 de febrero</p>
-            <p class="vende">Vendido por <strong>PcComponentes</strong></p>
-          </a>
+              <p class="price">89€</p>
+              <p class="recibelo">Recíbelo el lunes 30 de febrero</p>
+              <p class="vende">Vendido por <strong>PcComponentes</strong></p>
+            </a>
           </article>
 
           <article class="item">
@@ -255,15 +247,17 @@
                 src="https://thumb.pccomponentes.com/w-300-300/articles/1074/10745274/1729-playseat-evolution-silla-gaming-universal-blanca.jpg"
                 alt="portatil"
               />
-            
-            <div class="opciones">
-              <p class="gratis">Envío Gratis</p>
-            </div>
-            <p>Playseat Evolution Blanca</p>
-            <p class="price">364€</p>
-            <p class="recibelo">Recíbelo el jueves 1 y el lunes 5 de febrero</p>
-            <p class="vende">Vendido por <strong>PcComponentes</strong></p>
-          </a>
+
+              <div class="opciones">
+                <p class="gratis">Envío Gratis</p>
+              </div>
+              <p>Playseat Evolution Blanca</p>
+              <p class="price">364€</p>
+              <p class="recibelo">
+                Recíbelo el jueves 1 y el lunes 5 de febrero
+              </p>
+              <p class="vende">Vendido por <strong>PcComponentes</strong></p>
+            </a>
           </article>
 
           <article class="item">
@@ -274,25 +268,24 @@
                 src="https://thumb.pccomponentes.com/w-300-300/articles/25/252818/1.jpg"
                 alt="portatil"
               />
-            
-            <div class="opciones">
-              <p class="gratis">Envío Gratis</p>
-            </div>
-            <p>Mars Gaming MHHPRO Soporte para Auriculares 3 en 1 RGB</p>
-            <p class="price">23,07€</p>
-            <p class="recibelo">Recíbelo el martes 30 de enero</p>
-            <p class="vende">Vendido por <strong>infopavon</strong></p>
-            <i class="bi bi-circle-fill circle1"></i>
-            <i class="bi bi-circle-fill circle2"></i>
-          </a>
+
+              <div class="opciones">
+                <p class="gratis">Envío Gratis</p>
+              </div>
+              <p>Mars Gaming MHHPRO Soporte para Auriculares 3 en 1 RGB</p>
+              <p class="price">23,07€</p>
+              <p class="recibelo">Recíbelo el martes 30 de enero</p>
+              <p class="vende">Vendido por <strong>infopavon</strong></p>
+              <i class="bi bi-circle-fill circle1"></i>
+              <i class="bi bi-circle-fill circle2"></i>
+            </a>
           </article>
         </section>
 
-        <section class="blogs">
-          
-          <h2>Posts Relacionados</h2>
+        <h2 class="posts">Posts Relacionados</h2>
 
-          <div class="seccion">
+        <section class="blogs">
+          <div class="blog">
             <div class="image-zoom">
               <img
                 src="./assets/portatil.jpg"
@@ -311,45 +304,41 @@
             </div>
           </div>
 
-          <div class="seccion">
-            <div class="blog-post">
-              <div class="image-zoom">
-                <img
-                  src="./assets/monitores.webp"
-                  alt="imagen_monitores"
-                  class="image"
-                />
-              </div>
-              <div class="blog2">
-                <h3>Mejores monitores relación calidad precio de 2023</h3>
-                <p>
-                  Los mejores monitores relación calidad precio para ordenador
-                  ofrecen la combinación perfecta de resolución, frecuencia de
-                  actualización y...
-                </p>
-                <p>Ver más -></p>
-              </div>
+          <div class="blog">
+            <div class="image-zoom">
+              <img
+                src="./assets/monitores.webp"
+                alt="imagen_monitores"
+                class="image"
+              />
+            </div>
+            <div class="blog2">
+              <h3>Mejores monitores relación calidad precio de 2023</h3>
+              <p>
+                Los mejores monitores relación calidad precio para ordenador
+                ofrecen la combinación perfecta de resolución, frecuencia de
+                actualización y...
+              </p>
+              <p>Ver más -></p>
             </div>
           </div>
 
-          <div class="seccion">
-            <div class="blog-post">
-              <div class="image-zoom">
-                <img
-                  src="./assets/teclado.webp"
-                  alt="imagen_teclado"
-                  class="image"
-                />
-              </div>
-              <div class="blog2">
-                <h3>Mejores teclados inalámbricos: ¿Cuál comprar?</h3>
-                <p>
-                  Si quieres vivir sin enredos o tener una configuración más
-                  limpia y minimalista necesitas un teclado inalámbrico. Si
-                  estás cansado de lidiar...
-                </p>
-                <p>Ver más -></p>
-              </div>
+          <div class="blog">
+            <div class="image-zoom">
+              <img
+                src="./assets/teclado.webp"
+                alt="imagen_teclado"
+                class="image"
+              />
+            </div>
+            <div class="blog2">
+              <h3>Mejores teclados inalámbricos: ¿Cuál comprar?</h3>
+              <p>
+                Si quieres vivir sin enredos o tener una configuración más
+                limpia y minimalista necesitas un teclado inalámbrico. Si estás
+                cansado de lidiar...
+              </p>
+              <p>Ver más -></p>
             </div>
           </div>
         </section>
@@ -390,17 +379,175 @@
             <h2>Auriculares y Micrófonos</h2>
             <p>
               us sesiones de Skype y juego no volverán a ser las mismas con
-              cualquiera de nuestros <a href="#">auriculares</a> y micrófonos. ¿Eres un sibarita
-              del sonido? Con un <a href="#">micrófono de mesa</a> pasarás por comentarista
-              deportivo, por un jefazo de las ondas radiofónicas. Los <a href="#">cascos
-                gaming</a> ofrecen comodidad y fidelidad a partes iguales para que tus
-              partidas sean lo más provechosas posibles. ¡Ni notarás que los
-              llevas puestos!
+              cualquiera de nuestros <a href="#">auriculares</a> y micrófonos.
+              ¿Eres un sibarita del sonido? Con un
+              <a href="#">micrófono de mesa</a> pasarás por comentarista
+              deportivo, por un jefazo de las ondas radiofónicas. Los
+              <a href="#">cascos gaming</a> ofrecen comodidad y fidelidad a
+              partes iguales para que tus partidas sean lo más provechosas
+              posibles. ¡Ni notarás que los llevas puestos!
             </p>
           </div>
+
+          <article>
+            <div class="options">
+              <i class="bi bi-truck icon" id="icon"></i>
+              <p>
+                <strong>Envíos gratuitos</strong> en pedidos <br>
+                superiores a 50€.
+              </p>
+              <i class="bi bi-alarm" id="icon"></i>
+              <p>Recibe tu pedido en 24h.</p>
+              <i class="bi bi-arrow-left-right" id="icon"></i>
+              <p>
+                <strong>Devoluciones gratuitas</strong> y garantía de<br>
+                sustitución 24h.
+              </p>
+            </div>
+          </article>
         </section>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section class="secciones">
+        <div class="category">
+          <h2><u>Por qué comprar</u></h2>
+          <ul>
+            <li><a href="#">Cómo comprar</a></li>
+            <li><a href="#">Formas de pago</a></li>
+            <li><a href="#">Gastos de envío</a></li>
+            <li><a href="#">Cupones descuento</a></li>
+            <li><a href="#">Preguntasa frecuentes</a></li>
+            <li><a href="#">Opiniones de clientes</a></li>
+            <li><a href="#">Tarjetas regalo</a></li>
+          </ul>
+        </div>
+
+        <div class="category">
+          <h2><u>Quiénes somos</u></h2>
+          <ul>
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Compromisos</a></li>
+            <li><a href="#">Nuestras tiendas</a></li>
+            <li><a href="#">Nuestras marcas</a></li>
+            <li><a href="#">Condiciones de compra</a></li>
+            <li><a href="#">Afiliados</a></li>
+            <li><a href="#">Aviso legal</a></li>
+            <li><a href="#">Privacidad</a></li>
+          </ul>
+        </div>
+
+        <div class="category">
+          <h2><u>Contactar</u></h2>
+          <ul>
+            <li><a href="#">Centro de soporte</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Canal ético</a></li>
+            <li><a href="#">Devoluciones y Garantías</a></li>
+            <li><a href="#">Wiki PcComponentes</a></li>
+            <li><a href="#">Opina y Gana</a></li>
+            <li><a href="#">Publicidad</a></li>
+            <li><a href="#">Trabaja con nosotros</a></li>
+            <li><a href="#">Política de cookies</a></li>
+          </ul>
+        </div>
+
+        <div class="category">
+          <h2><u>Otros</u></h2>
+          <ul>
+            <li><a href="#">Replay</a></li>
+            <li><a href="#">Black Friday</a></li>
+            <li><a href="#">Cyber Monday</a></li>
+            <li><a href="#">PcDays</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Opina y Gana</a></li>
+            <li><a href="#">Publicidad</a></li>
+            <li><a href="#">Trabaja con nosotros</a></li>
+            <li><a href="#">Política de cookies</a></li>
+          </ul>
+        </div>
+
+        <div class="category">
+          <h2><u>Comunidad</u></h2>
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="bi bi-card-text icon" id="icons"></i
+                ><span>Blog</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-instagram icon" id="icons"></i
+                ><span>Instagram</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-twitter-x icon" id="icons"></i
+                ><span>Twitter</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-facebook icon" id="icons"></i
+                ><span>Facebook</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-telegram icon" id="icons"></i
+                ><span>Telegram</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-youtube icon" id="icons"></i
+                ><span>Youtube</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-tiktok icon" id="icons"></i
+                ><span>Tiktok</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-twitch icon" id="icons"></i
+                ><span>Twitch</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="apps">
+          <h3><strong><u>Descarga nuestra App</u></strong></h3>
+          <div class="android">
+            <i class="bi bi-android"></i>
+            <a href="#">Descarga app Google Play</a>
+          </div>
+          <div class="apple">
+            <i class="bi bi-apple"></i>
+            <a href="#">Descarga app en App Store</a>
+          </div>
+        </div>
+      </section>
+      <section class="copy">
+        <p>
+          Lizzard Gamming y Multimedia Co. AVDA Europa, Parcela 2-5 y 2-6.
+          Polígono industrial Ruinas de Zanarkand casa 10, 038542, Zanarkand,
+          SPIRA.
+        </p>
+        <p>&copy; 2023 by Karlos</p>
+        <div class="personal">
+          <a href="https://github.com/Karl0s83"
+            ><i class="bi bi-github"></i>Github</a
+          >
+          <a href="https://www.linkedin.com/in/carlos-escribano-tiñena/"
+            ><i class="bi bi-linkedin"></i>linkedin</a
+          >
+        </div>
+      </section>
+    </footer>
   </body>
 </html>

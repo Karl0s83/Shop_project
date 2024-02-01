@@ -7,9 +7,9 @@
 }
 
 :root {
-  --color-letter: #fe7a36;
-  --background: #280274;
-  --second-color: #3652ad;
+  --color-letter: #fe8e49;
+  --background: #100144;
+  --second-color: #162175;
 }
 
 body {
@@ -45,6 +45,7 @@ body {
   right: 15px;
   cursor: pointer;
   font-size: 1.8em;
+  
 }
 
 .main-nav {
@@ -75,19 +76,36 @@ body {
   background: var(--color-letter);
   text-align: center;
   color: rgb(63, 59, 59);
-  padding-top: 4em;
-  width: 100%;
 }
 
-.banner,
-.img_banner {
+.banner, .especial{
+  margin-bottom: 10px;
+}
+
+.banner, .background {
   width: 100%;
 }
 
 .pcgamer {
   text-align: justify;
-  padding: 20px 10px;
+  padding: 20px 20px;
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-out;
+  z-index: 500;
+}
+
+.back-to-top, .bottom {
+  font-size: 30px;
+}
+
 
 .productos {
   margin: 15px 15px;
@@ -103,7 +121,7 @@ body {
   border: 2px solid;
   padding: 25px;
   width: 354px;
-  height: 518px;
+  height: 540px;
 }
 
 .item a {
@@ -171,24 +189,19 @@ body {
   color: black;
 }
 
+#info {
+  font-size: 16px;
+}
+
 /* Aquí no conseguí que las imagenes al hacer scroll no se solapasen con el navbar */
 /* Al cabo de unas horas pude entender lo del z-index en el .navbar, y ahora no se solapan */
 
-.seccion {
+.blog {
   padding: 25px;
-}
-
-.blogs h2 {
-  padding: 20px;
-}
-
-.blogs {
   flex-wrap: wrap;
 }
 
-.seccion {
-  flex-wrap: wrap;
-}
+
 
 .image-zoom {
   width: 100%;
@@ -231,16 +244,301 @@ body {
 
 .resum a {
   text-decoration: none;
-  color: var(--second-color);
+  color: white;
   text-decoration: underline;
 }
 
+.options {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.options,
+i {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.options p {
+  font-size: 20px;
+}
+
+.secciones {
+  background: var(--second-color);
+  border: 1px solid var(--color-letter);
+  margin-top: 30px;
+  padding-left: 0.9em;
+}
+
+.secciones,
+details,
+ul,
+li {
+  padding-top: 0.5em;
+  padding-bottom: .5em;
+}
+
+.secciones,
+h2 {
+  margin-bottom: 2px;
+}
+
+.secciones,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--color-letter);
+}
+
+#icon {
+  font-size: 40px;
+  padding: 10px;
+}
+
+.apps {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.apps,
+i {
+  margin-right: 0.6em;
+}
+
+.apps, h3 {
+  margin-bottom: 10px;
+}
+
+.copy {
+  padding: 10px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.copy,
+a,
+i {
+  margin-right: 0.5em;
+}
+
+.personal {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
 @media screen and (min-width: 375px) {
-  #compra {
+  .icon {
+    margin-right: 10px;
+  }
+
+  .banner {
+    padding-top: 5em;
+  }
+
+  .background {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .lizard {
+    width: 60px;
+  }
+
+  .navbar-toggle {
+    font-size: 50px;
+  }
+
+  .nav-links {
+    font-size: 30px;
+  }
+
+  .banner {
+    padding-top: 6em;
+  }
+
+  .background {
+    width: 100%;
+  }
+
+  .posts {
+    display: flex;
+    justify-content: center;
+  }
+
+  .blogs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+
+  .blog {
+    flex: 1 0 auto;
+  }
+
+  .image-zoom {
+    width: 420px;
+  }
+
+  .blog2 {
+    width: 350px;
+  }
+
+  .secciones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .secciones, .category {
+    flex-wrap: wrap;
+    padding: 20px;
+  }  
+
+  .apps {
+    padding-top: 8px;
+  }
+
+  .copy {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .navbar {
+    align-items: center;
+    position: static;
+  }
+
+  .navbar2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+  }
+
+  .lizard {
+    width: 70px;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .banner {
+    font-size: 25px;
+    display: flex;
+    text-align: justify;
+    padding: 0;
+  }
+
+  .especial {
+    padding: 20px;
+  }
+
+  .pcgamer {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #hidden {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links:not(#hidden) {
+    border: 1px solid var(--primary);
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .nav-links:hover {
+    color: var(--secondary);
+    background: var(--fifth);
+  }
+
+  label {
     display: none;
   }
 
-  .icon {
-    margin-right: 10px;
+  #compra {
+    display: flex;
+    align-items: center;
+  }
+
+  .posts {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  .blogs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .blog2 {
+    font-size: 20px;
+  }
+
+  .resum {
+    text-align: center;
+    padding: 0 10em;
+    font-size: 20px;
+  }
+
+  .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #icon {
+    margin-left: 20px;
+    font-size: 50px;
+  }
+
+  .secciones {
+    display: flex;
+  }
+
+  .secciones, .category {
+    padding: 20px;
+  }
+
+  .secciones,
+  #icons {
+    font-size: 20px;
+  }
+
+  .apps {
+    margin-top: 6em;
+    margin-left: 8em;
+  }
+
+  .personal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .personal,
+  a,
+  i {
+    margin-top: 5px;
+    margin-right: 0.5em;
   }
 }
